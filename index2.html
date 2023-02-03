@@ -5,7 +5,8 @@
     <title>HTMLとCSSの練習</title>
     <meta name="description" content="説明文です">
     <meta charset="utf-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style2.css">
 
     <!-- このhtmlファイル内のstyleを一括指定 -->
@@ -25,7 +26,7 @@
         <a href="index.html"><img src="images/logo.png" alt="トップページに戻る" style="height:70px;"></a>
 
         <!-- ここではstyleを直接指定して配置を調整しています -->
-        <nav style="text-align:right; padding-top:15px;">
+        <nav id="nav-pc" style="text-align:right; padding-top:15px;">
             <a href="mission.html">MISSION</a>
             <a href="product.html">PRODUCT</a>
             <a href="index2.html#aboutus">ABOUT US</a>
@@ -33,6 +34,27 @@
             <a href="index2.html#company">COMPANY</a>
             <a href="index2.html#contact">CONTACT</a>
         </nav>
+
+         <!-- スマホ用メニューボタン -->
+         <img id="menu-sp" src="images/bars_24.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+         <!-- スマホ用ナビゲーション -->
+         <nav id="nav-sp">
+           <img id="close" src="images/917_x_h.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+           <div id="nav-menu">
+                <a class="menu" href="mission.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MISSION</a>
+                <a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+                <a class="menu" href="index2.html#aboutus" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT
+                    US</a>
+                <a class="menu" href="index2.html#vision"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'">VISION</a>
+                <a class="menu" href="index2.html#company"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'">COMPANY</a>
+                <a class="menu" href="index2.html#contact"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+            </div>
+         </nav>
+
     </header>
 
     <main>
