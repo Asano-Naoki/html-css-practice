@@ -70,16 +70,16 @@ h2::after, h2::before {
         margin-left:100px;
     }
 
-  #nav-sp {
-    background-color: #2710d5;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    z-index: 100;
-  }
+    #nav-sp {
+      background-color: #2710d5;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: none;
+      z-index: 100;
+    }
 
   }
 
