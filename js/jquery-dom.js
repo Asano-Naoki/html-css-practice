@@ -8,8 +8,11 @@ $('#calculate').on('click', ()=>{
     $("#remainder").text(remainder);
 });
 
+let num = 0;
+
 $('#list').on('click', ()=>{
-    const li = $('<li>').text('追加されました').css('color', 'blue');
+    num++;
+    const li = $('<li></li>').text('appendで追加' + num);
     $('ul').append(li);
 });
 
