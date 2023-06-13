@@ -1,5 +1,29 @@
+//宿題１
+
+// 関数の定義
+const checkTon = (totalTon) => {
+  console.log('総トン数：'+totalTon);
+  if (totalTon < 300) {
+      console.log('法律Aが適用されます');
+  }
+  else if (totalTon < 500) {
+      console.log('法律Bが適用されます');
+  }
+  else (totalTon >= 500){
+      console.log('法律Cが適用されます');
+  }
+}
+
+// 関数の適用
+checkTon(300);
+checkTon(500);
+checkTon(600);
+checkTon(1000);
+checkTon(Math.random() * 600);
 
 
+
+//宿題２
 // add-btnというidを持つHTML要素を取得し、定数に代入する
 const addBtn = document.getElementById('add-btn');
 // parent-listというidを持つHTML要素を取得し、定数に代入する
