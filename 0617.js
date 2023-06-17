@@ -8,8 +8,8 @@ consoleBtn.addEventListener('click', () => {
 const countBtn = document.getElementById('count-btn');
 const string = document.getElementById('string');
 countBtn.addEventListener('click', () => {
-  const countResult = document.createElement('p')
   console.log('「' + string.textContent + '」の文字数は' + string.textContent.length + '文字です');
+  console.log('「' + 'これはテストのための文字列です' + '」の文字数は' + '15' + '文字です');
 });
 
 // 宿題３
