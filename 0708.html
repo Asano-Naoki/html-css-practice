@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScriptの練習</title>
+  </head>
+  <body>
+
+  <h3>救命いかだの検査項目</h3>
+
+  <p>直近５年の検査状況をもとに今年の検査項目を選択</p>
+
+  <table border="1" id="table">
+    <tr>
+      <th>救命いかだ番号</th>
+      <th>使用年数</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+      <th>2021</th>
+      <th>2022</th>
+      <th>2023</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>12</td>
+      <td>×</td>
+      <td>△</td>
+      <td></td>
+      <td>○</td>
+      <td></td>
+      <td>
+        <select style="font-size: x-large;">
+          <option value="a"></option>
+          <option value="b">○</option>
+          <option value="c">△</option>
+          <option value="d">×</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>5</td>
+      <td>○</td>
+      <td></td>
+      <td></td>
+      <td>△</td>
+      <td>×</td>
+      <td>
+        <select style="font-size: x-large;">
+          <option value="a"></option>
+          <option value="b">○</option>
+          <option value="c">△</option>
+          <option value="d">×</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>△</td>
+      <td></td>
+      <td>
+        <select style="font-size: x-large;">
+          <option value="a"></option>
+          <option value="b">○</option>
+          <option value="c">△</option>
+          <option value="d">×</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+        <select style="font-size: x-large;">
+          <option value="a"></option>
+          <option value="b">○</option>
+          <option value="c">△</option>
+          <option value="d">×</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td>○</td>
+      <td></td>
+      <td>×</td>
+      <td>
+        <select style="font-size: x-large;">
+          <option value="a"></option>
+          <option value="b">○</option>
+          <option value="c">△</option>
+          <option value="d">×</option>
+      </select>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <p><button id="remove-choice-btn">可能な検査の選択肢の絞り込み</button></p>
+  <p>
+    * 使用年数にかかわらず直近4年のデータを参照しています。<br>
+    * 空白（検査なし）の可否の判定はしていません。
+  </p>
+
+  <p><button id="total-btn">集計</button></p>
+
+  <p id="total"></p>
+
+  <script src="0708.js"></script>
+  </body>
+</html>

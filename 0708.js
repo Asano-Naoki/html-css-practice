@@ -1,9 +1,26 @@
-// 集計ボタン、結果表示欄、selectタグを取得
+
 const totalButton = document.getElementById('total-btn');
+const removeChoiceButton = document.getElementById('remove-choice-btn')
 const total = document.getElementById('total');
 const selects = document.getElementsByTagName('select');
+const trs = document.getElementsByTagName('tr');
 
-// 集計ボタンをクリックしたときの動作
+removeChoiceButton.addEventListener('click', () => {
+  for (let i = 1; i < trs.length; i++) {
+    let theNumberOfOptions = 4; 
+    for (let j = 6; j > 2; j--) {
+      let target = trs[i].children[j].textContent;
+      for (let k = 0; k < theNumberOfOptions; k++) {
+        let option = selects[i-1].children[k].textContent;
+        if (target != '' && target == option) {
+          selects[i-1].children[k].remove();
+          theNumberOfOptions--;
+        }
+      }
+    }
+  }
+});
+
 totalButton.addEventListener('click', () => {
   //空白、○、△、×をそれぞれ初期化
   let a = 0;
