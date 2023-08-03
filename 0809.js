@@ -85,7 +85,6 @@ removeChoiceButton8.addEventListener('click', () => {
     let targetYears = trs[i].children[1].textContent % 5;
     for (let j = 6; j > 6 - targetYears; j--) {
       let target = trs6[i].children[j].textContent;
-      console.log(target);
       for (let k = 0; k < theNumberOfOptions; k++) {
         let option = selects3[i-1].children[k].textContent;
         if (target != '' && target == option) {
@@ -116,8 +115,6 @@ removeChoiceButton9.addEventListener('click', () => {
     for (let j = 6; j > 6 - targetYears; j--) {
       // その年にした検査項目を取得し、target変数に入れる。
       let target = trs6[i].children[j].textContent;
-      // target変数の内容をコンソールに出力（任意）
-      console.log(target);
       // target変数の内容が空白の場合は次の列に
       if (target == '') {
         continue;
